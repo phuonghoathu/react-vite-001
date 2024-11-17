@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import FirstComponent from './components/FirstComponent.jsx'
 import { SecondComponents, ThirdComponent } from './components/GroupComponents.jsx'
+import VariableComp from './components/VariableComp.jsx'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ const App = () => {
       <FirstComponent/>
       <SecondComponents/>
       <ThirdComponent/>
+      <VariableComp/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
